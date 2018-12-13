@@ -29,13 +29,13 @@ dance_one_analysis = \lyricmode {
   \set stanza = #"G:    "
   \markup \rN { ii } \skip 2
   \markup \rN { V 7 } \skip 2
-  \markup \rN { i } \skip 2
+  \markup \rN { I } \skip 2
   \markup \rN { vi } \skip 2
 
   \markup \rN { N } \skip 2
   \markup \center-align \rN { Fr + 6 } \skip 4
   \markup \rN { V }
-  \markup \center-align \rN { Cad 6 4 } \skip 4
+  \markup \rN { Cad 6 4 } \skip 4
   \markup \rN { V 7 }
   \markup \rN { I } \skip 2
 }
@@ -45,12 +45,13 @@ dance_two_analysis = \lyricmode {
   \markup \rN { I } \skip 2
   \markup \rN { V } \skip 2
   \markup \rN { ii } \skip 4
-  \markup \rN { V }
+  \markup \rN { V 7 }
   \markup \rN { I } \skip 2
 
-  \markup \rN { V / vi } \skip 2
+  \markup \rN { V 7 / vi } \skip 2
   \markup \rN { vi } \skip 2
-  \markup \rN { CadV 6 4 / V } \skip 2
+  \markup \center-align \rN { Cad 6 4 / V } \skip 4
+  \markup \center-align \rN { V 7 / V }
   \markup \rN { V } \skip 2
 
   \markup \rN { V 7 } \skip 2
@@ -79,7 +80,7 @@ dance_two_analysis = \lyricmode {
         }
         \repeat volta 2 {
           a8 b c4 e | \circle e8^"App" d c \circle b^"NT" c a | g4 b d | e b g |
-          af c ef | cs ef d | b g4. fs8 | g2. \break
+          af c ef | cs ef d | b8 a g4. fs8 | g2. \break
         }
         \key c \major
         \repeat volta 2 {
@@ -87,7 +88,7 @@ dance_two_analysis = \lyricmode {
           e8 fs gs4 e' | f8 e d c b a | b a g4 fs | g2. | \break
         }
         \repeat volta 2 {
-          g8 a b4 d | g8 f e d c \circle a^"Cam" | b d g gs \circle a^"Esc" f | e2 e4 |
+          g8 a b4 d | g8 f e d c \circle a^"Cam" | b d g gs \circle a^"Esc" f | e2 \circle f4~^"Ant" |
           f8 g f e d4 | e8 f e d c4 | d8 c b g b d | c2. |
         }
       }
@@ -98,7 +99,7 @@ dance_two_analysis = \lyricmode {
           \clef "bass"
           << {
             \repeat volta 2 {
-              g=,4 <d' g b> <d g b> | d, <d' a' c> <fs a d> | g, <d' g b> <d g b> | g, <d' g b> <fs a c> |
+              g,,=,4 <d' g b> <d g b> | d, <d' a' c> <fs a d> | g, <d' g b> <d g b> | g, <d' g b> <fs a c> |
               e, <g' b e> <g b e> | a, <a' c e> <fs a ds> | e, <e' g b>  <e a c> | <e g> <fs a> <g b> | 
             }
             \repeat volta 2 {
@@ -107,7 +108,7 @@ dance_two_analysis = \lyricmode {
             }
             \key c \major
             \repeat volta 2 {
-              c=4 <e g c> <g c e> | g, <g' b d> <g b d> | d, <f' a d> <f b d> | c <e g c> c,8 d | 
+              c=4 <e g c> <g c e> | g, <g' b d> <g b d> | d, <f' a d> <g b d> | c, <e g c> c,8 d | 
               e4 <e' gs b> <gs b d> | a, <a' c e> <a c e> | d,, <d' g b> <d a' c> | g, <d' g b>2 | 
 
             }
